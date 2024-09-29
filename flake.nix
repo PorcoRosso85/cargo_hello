@@ -29,7 +29,8 @@
             buildInputs = [ pkgs.openssl ];  # 実行時に必要なライブラリ
           };
 
-        defaultPackage = packages.cargo_hello;  # デフォルトでビルドされるパッケージ
+        defaultPackage = self.packages.cargo_hello;  # デフォルトでビルドされるパッケージ
       }
     );
-# }
+}
+
